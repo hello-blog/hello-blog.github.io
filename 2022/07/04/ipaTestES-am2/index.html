@@ -28,13 +28,15 @@
 <meta property="og:site_name" content="HelloBlog">
 <meta property="og:description" content="令和3年秋期、">
 <meta property="og:locale" content="ja_JP">
+<meta property="og:image" content="https://hello-blog.github.io/2022/07/04/ipaTestES-am2/r3-4.png">
 <meta property="article:published_time" content="2022-07-04T13:56:53.000Z">
-<meta property="article:modified_time" content="2022-07-04T15:16:30.814Z">
+<meta property="article:modified_time" content="2022-07-05T15:06:38.069Z">
 <meta property="article:author" content="ハロ">
 <meta property="article:tag" content="IPA">
 <meta property="article:tag" content="情報処理推進機構">
 <meta property="article:tag" content="エンベデッドシステムスペシャリスト">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://hello-blog.github.io/2022/07/04/ipaTestES-am2/r3-4.png">
 
 
 <link rel="canonical" href="https://hello-blog.github.io/2022/07/04/ipaTestES-am2/">
@@ -219,7 +221,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">編集日</span>
-      <time title="修正日：2022-07-05 00:16:30" itemprop="dateModified" datetime="2022-07-05T00:16:30+09:00">2022-07-05</time>
+      <time title="修正日：2022-07-06 00:06:38" itemprop="dateModified" datetime="2022-07-06T00:06:38+09:00">2022-07-06</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -244,8 +246,8 @@
         <p>令和3年秋期、</p>
 <span id="more"></span>
 <div class="note success"><h2 id="令和3年秋期"><a href="#令和3年秋期" class="headerlink" title="令和3年秋期"></a>令和3年秋期</h2></div>
-<h3 id="問1"><a href="#問1" class="headerlink" title="問1"></a><i class="fa-solid fa-bookmark"></i>問1</h3><div class="tabs" id="r3"><ul class="nav-tabs"><li class="tab active"><a href="#r3-1">問題</a></li><li class="tab"><a href="#r3-2">回答</a></li></ul><div class="tab-content"><div class="tab-pane active" id="r3-1"><p>パイプラインハザード対策に関する記述のうち, アウトオブオーダ実行方式を用いたものはどれか。</p>
-<p>ア　演算に必要なデータがそろうまで実行が待たされている命令によって, 後続の命令の実行が待たされることを防ぐために, 既にデータがそろっている後続の命令があれば,それを先に実行する。<br>イ　条件分岐命令の判定結果が分かるまで分岐後の命令実行が待たされることを防ぐために, 分岐する確率が高い方の命令を先読みして実行する。<br>ウ　前の命令の演算結果がレジスタに書き込まれるまで次の命令の実行が待たされることを防ぐために, プロセッサ内にバイパス経路を設け, 演算結果を演算器に直接入力して次の命令を実行する。<br>エ　レジスタへのアクセスが競合して後続の命令の実行が待たされることを防ぐために, クロックサイクルを細分化し, サイクル前半を書込み, 後半を読出しとすることによって競合なく命令を実行する。</p></div><div class="tab-pane" id="r3-2"><p>ア</p>
+<h3 id="問1"><a href="#問1" class="headerlink" title="問1"></a><i class="fa-solid fa-bookmark"></i>問1</h3><div class="tabs" id="r3-1"><ul class="nav-tabs"><li class="tab active"><a href="#r3-1-1">問題</a></li><li class="tab"><a href="#r3-1-2">回答</a></li></ul><div class="tab-content"><div class="tab-pane active" id="r3-1-1"><p>パイプラインハザード対策に関する記述のうち, アウトオブオーダ実行方式を用いたものはどれか。</p>
+<p>ア　演算に必要なデータがそろうまで実行が待たされている命令によって, 後続の命令の実行が待たされることを防ぐために, 既にデータがそろっている後続の命令があれば,それを先に実行する。<br>イ　条件分岐命令の判定結果が分かるまで分岐後の命令実行が待たされることを防ぐために, 分岐する確率が高い方の命令を先読みして実行する。<br>ウ　前の命令の演算結果がレジスタに書き込まれるまで次の命令の実行が待たされることを防ぐために, プロセッサ内にバイパス経路を設け, 演算結果を演算器に直接入力して次の命令を実行する。<br>エ　レジスタへのアクセスが競合して後続の命令の実行が待たされることを防ぐために, クロックサイクルを細分化し, サイクル前半を書込み, 後半を読出しとすることによって競合なく命令を実行する。</p></div><div class="tab-pane" id="r3-1-2"><p>ア</p>
 <p>パイプラインハザードとは？<br>CPUのパイプラインに送った命令の手戻り。</p>
 <ul>
 <li>データハザード：直前の演算結果がないとオペランドが読めないので、計算終わるまで待つ</li>
@@ -254,10 +256,37 @@
 </ul>
 <p>アウトオブオーダー実行とは？<br>命令順序を守らない実行方法。依存関係のないものを先に進める。</p></div></div></div>
 
-<h3 id="問2"><a href="#問2" class="headerlink" title="問2"></a><i class="fa-solid fa-bookmark"></i>問2</h3><div class="tabs" id="r3"><ul class="nav-tabs"><li class="tab active"><a href="#r3-1">問題</a></li><li class="tab"><a href="#r3-2">回答</a></li></ul><div class="tab-content"><div class="tab-pane active" id="r3-1"><p><strong>This is Tab 1.</strong></p></div><div class="tab-pane" id="r3-2"><p><strong>This is Tab 2.</strong></p></div></div></div>
-<h3 id="問3"><a href="#問3" class="headerlink" title="問3"></a><i class="fa-solid fa-bookmark"></i>問3</h3><div class="tabs" id="r3"><ul class="nav-tabs"><li class="tab active"><a href="#r3-1">問題</a></li><li class="tab"><a href="#r3-2">回答</a></li></ul><div class="tab-content"><div class="tab-pane active" id="r3-1"><p><strong>This is Tab 1.</strong></p></div><div class="tab-pane" id="r3-2"><p><strong>This is Tab 2.</strong></p></div></div></div>
-<h3 id="問4"><a href="#問4" class="headerlink" title="問4"></a><i class="fa-solid fa-bookmark"></i>問4</h3><div class="tabs" id="r3"><ul class="nav-tabs"><li class="tab active"><a href="#r3-1">問題</a></li><li class="tab"><a href="#r3-2">回答</a></li></ul><div class="tab-content"><div class="tab-pane active" id="r3-1"><p><strong>This is Tab 1.</strong></p></div><div class="tab-pane" id="r3-2"><p><strong>This is Tab 2.</strong></p></div></div></div>
-<h3 id="問5"><a href="#問5" class="headerlink" title="問5"></a><i class="fa-solid fa-bookmark"></i>問5</h3><div class="tabs" id="r3"><ul class="nav-tabs"><li class="tab active"><a href="#r3-1">問題</a></li><li class="tab"><a href="#r3-2">回答</a></li></ul><div class="tab-content"><div class="tab-pane active" id="r3-1"><p><strong>This is Tab 1.</strong></p></div><div class="tab-pane" id="r3-2"><p><strong>This is Tab 2.</strong></p></div></div></div>
+<h3 id="問2"><a href="#問2" class="headerlink" title="問2"></a><i class="fa-solid fa-bookmark"></i>問2</h3><div class="tabs" id="r3-2"><ul class="nav-tabs"><li class="tab active"><a href="#r3-2-1">問題</a></li><li class="tab"><a href="#r3-2-2">回答</a></li></ul><div class="tab-content"><div class="tab-pane active" id="r3-2-1"><p>命令アドレスレジスタ (プログラムカウンタ) に関する記述として, 適切なものはどれか。</p>
+<p>ア 条件分岐命令を実行すると, 命令アドレスレジスタの内容が書き換えられることがある。<br>イ 転送命令では, 転送元アドレス, 転送先アドレス及び転送バイト数を全て命令アドレスレジスタにセットしてから転送を実行する。<br>ウ 分岐命令の実行前に,命令アドレスレジスタの内容が命令バッファに保存され,実行後に復帰される。<br>エ 命令アドレスレジスタで示された番地の主記憶には, 実行すべき命令のアドレスが格納されている。</p></div><div class="tab-pane" id="r3-2-2"><p>ア</p>
+<p>命令アドレスレジスタとは？<br>通称プログラムカウンタ。次に実行する命令のアドレスを示すレジスタ。分岐やジャンプ命令は、このレジスタを書き換えることで実現している。</p>
+<p>※エが違うのは　「実行すべき命令のアドレス」ではなく、「実行すべき命令」が格納されているが正解。</p></div></div></div>
+
+<h3 id="問3"><a href="#問3" class="headerlink" title="問3"></a><i class="fa-solid fa-bookmark"></i>問3</h3><div class="tabs" id="r3-3"><ul class="nav-tabs"><li class="tab active"><a href="#r3-3-1">問題</a></li><li class="tab"><a href="#r3-3-2">回答</a></li></ul><div class="tab-content"><div class="tab-pane active" id="r3-3-1"><p>メモリインタリーブの説明として, 適切なものはどれか。</p>
+<p>ア CPU から主記憶へのアクセスを高速化するために, キャッシュメモリと主記憶との両方に同時にデータを書き込む。<br>イ　CPU から主記憶へのアクセスを高速化するために, 主記憶内部を複数のバンクに分割し,各バンクを並列にアクセスする。<br>ウ CPU と主記憶のアクセス速度の違いによるボトルネックを解消するために, 高速かつ小容量のメモリを配置する。<br>エ パイプライン処理を乱す要因をなくすために, キャッシュメモリを命令用とデータ用の二つに分離する。</p></div><div class="tab-pane" id="r3-3-2"><p>イ</p>
+<p>メモリインタリーブとは？<br>主記憶装置へのアクセスを高速化するための手法。メモリを分割して（バンク）高速化する。CPUに比べてメモリは遅い。だからメモリを２つに分割してそれぞれのメモリにCPUから依頼が出せればCPUの待ち時間は減ることになる。</p></div></div></div>
+<h3 id="問4"><a href="#問4" class="headerlink" title="問4"></a><i class="fa-solid fa-bookmark"></i>問4</h3><div class="tabs" id="r3-4"><ul class="nav-tabs"><li class="tab active"><a href="#r3-4-1">問題</a></li><li class="tab"><a href="#r3-4-2">回答</a></li></ul><div class="tab-content"><div class="tab-pane active" id="r3-4-1"><p>8 ビットの方向レジスタ及びデータレジスタで構成される I&#x2F;Oポートがあり,各ビットに LED が一つずつ負論理で接続されている。 システム起動時に LED の不要な点灯を避けるための手続として, 適切なものはどれか。 ここで, レジスタに書き込む値は16進数で表現している。</p>
+<img src="/2022/07/04/ipaTestES-am2/r3-4.png" class="" title="図">
+
+<p>ア　データレジスタに 00 を書き込んでから, 方向レジスタにFF を書き込む。<br>イ　データレジスタに FF を書き込んでから, 方向レジスタに FF を書き込む。<br>ウ　方向レジスタに FF を書き込んでから,データレジスタに00 を書き込む。<br>エ　方向レジスタに FF を書き込んでから, データレジスタにFF を書き込む。			        	</p></div><div class="tab-pane" id="r3-4-2"><p>イ</p>
+<p>I&#x2F;Oポート（入出力ポート）の使い方に関する問題。物理的なポートへの設定をするために2つのレジスタで機能を実現している。</p>
+<ul>
+<li>方向レジスタ:入力用のポートなのか、出力用のポートなのかを決める。</li>
+<li>データレジスタ：方向レジスタで入力用ポートを指定した場合は、ポートの電圧がLOW＝”0”、HIGH＝”1”。方向レジスタで出力用ポートを指定した場合は、データレジスタが”0”&#x3D;LOW “1”＝HIGH　の電圧が出力される。</li>
+</ul>
+<p>通常、ポートのデフォルトは　入力（方向レジスタの値0)になるように設計されている（※いきなり出力しちゃうと怖いからね）従ってデータレジスタのデフォルト値は”不定”になる。（外部環境に依存するからね）</p>
+<p>ウ・エは間違い、方向レジスタにFFを書き込んだ時点でデータレジスタの”不定”の値が出力されるため、LEDが点灯する可能性がある。</p>
+<p>LEDは負論理で接続されているため、データレジスタに”1”がセットされると消灯となる。したがってイ以外に考えられない</p></div></div></div>
+<h3 id="問5"><a href="#問5" class="headerlink" title="問5"></a><i class="fa-solid fa-bookmark"></i>問5</h3><div class="tabs" id="r3-5"><ul class="nav-tabs"><li class="tab active"><a href="#r3-5-1">問題</a></li><li class="tab"><a href="#r3-5-2">回答</a></li></ul><div class="tab-content"><div class="tab-pane active" id="r3-5-1"><p>IoT に活用される機器間の情報のやり取りに用いられ, パブリッシュ&#x2F;サブスクライブ (Publish &#x2F; Subscribe) 型のモデルを採用し,<br>アプリケーション層のプロトコルへツダが最小で2バイトである軽量プロトコルはどれか。</p>
+<p>ア　CoAP<br>イ　HTTP<br>ウ　MQTT<br>エ　ZigBee			        </p></div><div class="tab-pane" id="r3-5-2"><p>ウ</p>
+<p> パブリッシュ&#x2F;サブスクライブ (Publish &#x2F; Subscribe) 型のモデルとは？<br> 送信者（パブリッシャー）と受信者（サブスクライバー）が登場します。送信者は自分の好きなタイミングでメッセージをチャンネルに対して送れます。（※受信者に対して送らない）受信者は登録しているチャンネルの内容を好きなタイミングで受信できます。（※もちろん通知してもらうこともできます）</p>
+<p> ラインのグループを　 パブリッシュ&#x2F;サブスクライブ (Publish &#x2F; Subscribe)のチャンネルと考えると理解できる。<br> もしくは、Youtubeで　動画配信は好きなタイミングで自分のチャネルに送信できる。受信者は好きなタイミングで、チャンネルから動画を見ることができる。</p>
+<p> ※イメージなので　LINEやYoutubeが実際に パブリッシュ&#x2F;サブスクライブ (Publish &#x2F; Subscribe)を使用しているかは知りません。</p>
+<ul>
+<li>CoAP（Constrained Application Protocol）:軽量なM2M（Machine to Machine）プロトコル。機械同士でつないで1対1通信。</li>
+<li>HTTP（Hyper Text Transfer Protocol）:HTMLの通信で使用されるプロトコル</li>
+<li>MQTT(Message Queueing Telemetry Transport):パブリッシュ&#x2F;サブスクライブ (Publish &#x2F; Subscribe) 型のモデルを採用したプロトコルヘッダが2byteの通信プロトコル。無駄が少ないので低消費電力のIOT向け。</li>
+<li>ZigBee：無線通信の規格。Bluetoothのお仲間。ZigBeeは複数台の接続も可能。</li>
+</ul></div></div></div>
 <h3 id="問6"><a href="#問6" class="headerlink" title="問6"></a><i class="fa-solid fa-bookmark"></i>問6</h3><div class="tabs" id="r3"><ul class="nav-tabs"><li class="tab active"><a href="#r3-1">問題</a></li><li class="tab"><a href="#r3-2">回答</a></li></ul><div class="tab-content"><div class="tab-pane active" id="r3-1"><p><strong>This is Tab 1.</strong></p></div><div class="tab-pane" id="r3-2"><p><strong>This is Tab 2.</strong></p></div></div></div>
 <h3 id="問7"><a href="#問7" class="headerlink" title="問7"></a><i class="fa-solid fa-bookmark"></i>問7</h3><div class="tabs" id="r3"><ul class="nav-tabs"><li class="tab active"><a href="#r3-1">問題</a></li><li class="tab"><a href="#r3-2">回答</a></li></ul><div class="tab-content"><div class="tab-pane active" id="r3-1"><p><strong>This is Tab 1.</strong></p></div><div class="tab-pane" id="r3-2"><p><strong>This is Tab 2.</strong></p></div></div></div>
 <h3 id="問8"><a href="#問8" class="headerlink" title="問8"></a><i class="fa-solid fa-bookmark"></i>問8</h3><div class="tabs" id="r3"><ul class="nav-tabs"><li class="tab active"><a href="#r3-1">問題</a></li><li class="tab"><a href="#r3-2">回答</a></li></ul><div class="tab-content"><div class="tab-pane active" id="r3-1"><p><strong>This is Tab 1.</strong></p></div><div class="tab-pane" id="r3-2"><p><strong>This is Tab 2.</strong></p></div></div></div>

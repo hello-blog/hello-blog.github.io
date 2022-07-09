@@ -32,8 +32,9 @@
 <meta property="og:image" content="https://hello-blog.github.io/2022/07/04/ipaTestES-am2/r3-10.png">
 <meta property="og:image" content="https://hello-blog.github.io/2022/07/04/ipaTestES-am2/r3-11.png">
 <meta property="og:image" content="https://hello-blog.github.io/2022/07/04/ipaTestES-am2/r3-12.png">
+<meta property="og:image" content="https://hello-blog.github.io/2022/07/04/ipaTestES-am2/r3-13.png">
 <meta property="article:published_time" content="2022-07-04T13:56:53.000Z">
-<meta property="article:modified_time" content="2022-07-07T15:32:14.181Z">
+<meta property="article:modified_time" content="2022-07-09T21:25:51.273Z">
 <meta property="article:author" content="ハロ">
 <meta property="article:tag" content="IPA">
 <meta property="article:tag" content="情報処理推進機構">
@@ -224,7 +225,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">編集日</span>
-      <time title="修正日：2022-07-08 00:32:14" itemprop="dateModified" datetime="2022-07-08T00:32:14+09:00">2022-07-08</time>
+      <time title="修正日：2022-07-10 06:25:51" itemprop="dateModified" datetime="2022-07-10T06:25:51+09:00">2022-07-10</time>
     </span>
     <span class="post-meta-item">
       <span class="post-meta-item-icon">
@@ -328,10 +329,22 @@
 <p>ア　0000 ～ 1FFF<br>イ　4000 ～ 7FFF<br>ウ　4000 ～ FFFF<br>エ　C000 ～ FFFF</p></div><div class="tab-pane" id="r3-12-2"><p>ウ</p>
 <p>アドレスパスとは？<br>データの格納先（アドレス）を示すためのもの。今回の場合A0～A13の14本がROMのアドレスを指定するために使われている。残りのA14,A15の2本はチップセレクト信号用に使われている。</p>
 <p>チップセレクト信号とは？<br>「君に決めた」っていう信号。今からデータの読み書きするからねっていう信号。なんで負論理なのかというと、そもそもつながっているのかつながっていないのかをチップが把握したいから。だって正論理だったら単純に回路がつながっていない場合と区別がつかない。従って、デフォルトをHIGHにして、LOWにすると　「わたしが選ばれた」と認識する。<br>ROMを動作させるには　「00」以外を設定する必要がある。<br>アドレス指定用に使われているのは14本でLSB（最小ビット）が<mark class="label ">A0</mark><br>以上より最小と最大のビットの並びは次のようになり、<br>0100 0000 0000 000<mark class="label ">0</mark>  ～　1111 1111 1111 111<mark class="label ">1</mark><br>16進数にすると<br>4000～FFFF</p></div></div></div>
-<h3 id="問13"><a href="#問13" class="headerlink" title="問13"></a><i class="fa-solid fa-bookmark"></i>問13</h3><div class="tabs" id="r3"><ul class="nav-tabs"><li class="tab active"><a href="#r3-1">問題</a></li><li class="tab"><a href="#r3-2">回答</a></li></ul><div class="tab-content"><div class="tab-pane active" id="r3-1"><p><strong>This is Tab 1.</strong></p></div><div class="tab-pane" id="r3-2"><p><strong>This is Tab 2.</strong></p></div></div></div>
-<h3 id="問14"><a href="#問14" class="headerlink" title="問14"></a><i class="fa-solid fa-bookmark"></i>問14</h3><div class="tabs" id="r3"><ul class="nav-tabs"><li class="tab active"><a href="#r3-1">問題</a></li><li class="tab"><a href="#r3-2">回答</a></li></ul><div class="tab-content"><div class="tab-pane active" id="r3-1"><p><strong>This is Tab 1.</strong></p></div><div class="tab-pane" id="r3-2"><p><strong>This is Tab 2.</strong></p></div></div></div>
-<h3 id="問15"><a href="#問15" class="headerlink" title="問15"></a><i class="fa-solid fa-bookmark"></i>問15</h3><div class="tabs" id="r3"><ul class="nav-tabs"><li class="tab active"><a href="#r3-1">問題</a></li><li class="tab"><a href="#r3-2">回答</a></li></ul><div class="tab-content"><div class="tab-pane active" id="r3-1"><p><strong>This is Tab 1.</strong></p></div><div class="tab-pane" id="r3-2"><p><strong>This is Tab 2.</strong></p></div></div></div>
-<h3 id="問16"><a href="#問16" class="headerlink" title="問16"></a><i class="fa-solid fa-bookmark"></i>問16</h3><div class="tabs" id="r3"><ul class="nav-tabs"><li class="tab active"><a href="#r3-1">問題</a></li><li class="tab"><a href="#r3-2">回答</a></li></ul><div class="tab-content"><div class="tab-pane active" id="r3-1"><p><strong>This is Tab 1.</strong></p></div><div class="tab-pane" id="r3-2"><p><strong>This is Tab 2.</strong></p></div></div></div>
+<h3 id="問13"><a href="#問13" class="headerlink" title="問13"></a><i class="fa-solid fa-bookmark"></i>問13</h3><div class="tabs" id="r3-13"><ul class="nav-tabs"><li class="tab active"><a href="#r3-13-1">問題</a></li><li class="tab"><a href="#r3-13-2">回答</a></li></ul><div class="tab-content"><div class="tab-pane active" id="r3-13-1"><p>TTLレベルの2入力 AND回路を入力 AND 回路にするために入力部に回路を追加した。3入力 AND回路として, 適切なものはどれか。</p>
+<img src="/2022/07/04/ipaTestES-am2/r3-13.png" class="" title="図"></div><div class="tab-pane" id="r3-13-2"><p>ウ</p>
+<p>TTL(Transistor Transistor Logic)レベルとは？<br>バイポーラトランジスタと抵抗で構成されるデジタル回路。</p>
+<p>ダイオードの性質を理解していれば解ける。ダイオードは一方通行と同じ。矢印の方向にしか電流を流さない。電流が流れている状態は電圧は等電位となる。</p>
+<p>ア、イは入力の状態によらず、AND回路には常時LOWが入ってしまう状態。エも同じく入力の状態によらず、AND回路には常時HIGHが入る。</p></div></div></div>
+<h3 id="問14"><a href="#問14" class="headerlink" title="問14"></a><i class="fa-solid fa-bookmark"></i>問14</h3><div class="tabs" id="r3-14"><ul class="nav-tabs"><li class="tab active"><a href="#r3-14-1">問題</a></li><li class="tab"><a href="#r3-14-2">回答</a></li></ul><div class="tab-content"><div class="tab-pane active" id="r3-14-1"><p>組込みシステムに適用される CPU の低消費電力化技術に関する説明として, 適切なものはどれか。</p>
+<p>ア　トランジスタのしきい値電圧を低くすることによって, 回路の動作は遅くなるがリーク電流が抑えられるので, 低消費電力になる。<br>イ　トランジスタの消費電力は電源電圧の2乗に反比例するので、 電圧を高くすることによって低消費電力になる。<br>ウ　パワーゲーティングを用いることによって, ダイナミックな消費電力は少なくなるが, リーク電流に起因する消費電力は抑えることができない。<br>エ　レジスタに供給するクロックがダイナミックな消費電力を増加させる要因の一つなので,不要なブロックへのクロックの供給を止めることによって低消費電力になる。		</p></div><div class="tab-pane" id="r3-14-2"><p>エ</p>
+<p>リーク電流とは？<br>漏れ電流のこと、本来流れないルートから一部電流が漏れている。トランジスタの閾値と回路の動作は関係ない。回路の動作はクロックで決まる。</p>
+<p>トランジスタの消費電力は電流×電圧。一般に消費電力は高電圧高電流の方が高い。</p>
+<p>パワーゲーティングとは？<br>回路内で使用されていないブロックの電力を遮断する。リーク電流も抑えることにつながる。</p>
+<p>余計な箇所へのクロック供給を止めれば消費電力になる。</p></div></div></div>
+<h3 id="問15"><a href="#問15" class="headerlink" title="問15"></a><i class="fa-solid fa-bookmark"></i>問15</h3><div class="tabs" id="r3-15"><ul class="nav-tabs"><li class="tab active"><a href="#r3-15-1">問題</a></li><li class="tab"><a href="#r3-15-2">回答</a></li></ul><div class="tab-content"><div class="tab-pane active" id="r3-15-1"><p>TCP&#x2F;IP ネットワークにおける ICMP の機能として, 適切なものはどれか。</p>
+<p>ア　IPパケットが経由したルータの数が規定値に達したことを送信元に通知する。<br>イ　UDPパケットのチェックサムエラーを送信元に通知する。<br>ウ　イーサネットフレームのFCSエラーが発生したときに再送を要求する。<br>エ　データが途中で失われたときに, TCPヘッダのシーケンス番号を送信元に伝え再送を要求する。		</p></div><div class="tab-pane" id="r3-15-2"><p>ア</p>
+<p>ICMP（Internect Control Message Protocol）とは？<br>ノード間の通信状態を確認するためのプロトコル。Pingのような機能。</p>
+<p>FCS(Frame Check Sequence)エラーとは？<br>チェックサム値を比較してフレームエラーを検出する仕組み。不一致の場合受信データを破棄し再要求できる。</p></div></div></div>
+<h3 id="問16"><a href="#問16" class="headerlink" title="問16"></a><i class="fa-solid fa-bookmark"></i>問16</h3><div class="tabs" id="r3-16"><ul class="nav-tabs"><li class="tab active"><a href="#r3-16-1">問題</a></li><li class="tab"><a href="#r3-16-2">回答</a></li></ul><div class="tab-content"><div class="tab-pane active" id="r3-16-1"><p>共通鍵暗号方式において, 100 人の送受信者のそれぞれが, 相互に暗号化通信を行うときに必要な共通鍵の総数は幾つか。<br>ア　200<br>イ　4,950<br>ウ　9,900<br>エ　10,000			        		</p></div><div class="tab-pane" id="r3-16-2"><p><strong>This is Tab 2.</strong></p></div></div></div>
 <h3 id="問17"><a href="#問17" class="headerlink" title="問17"></a><i class="fa-solid fa-bookmark"></i>問17</h3><div class="tabs" id="r3"><ul class="nav-tabs"><li class="tab active"><a href="#r3-1">問題</a></li><li class="tab"><a href="#r3-2">回答</a></li></ul><div class="tab-content"><div class="tab-pane active" id="r3-1"><p><strong>This is Tab 1.</strong></p></div><div class="tab-pane" id="r3-2"><p><strong>This is Tab 2.</strong></p></div></div></div>
 <h3 id="問18"><a href="#問18" class="headerlink" title="問18"></a><i class="fa-solid fa-bookmark"></i>問18</h3><div class="tabs" id="r3"><ul class="nav-tabs"><li class="tab active"><a href="#r3-1">問題</a></li><li class="tab"><a href="#r3-2">回答</a></li></ul><div class="tab-content"><div class="tab-pane active" id="r3-1"><p><strong>This is Tab 1.</strong></p></div><div class="tab-pane" id="r3-2"><p><strong>This is Tab 2.</strong></p></div></div></div>
 <h3 id="問19"><a href="#問19" class="headerlink" title="問19"></a><i class="fa-solid fa-bookmark"></i>問19</h3><div class="tabs" id="r3"><ul class="nav-tabs"><li class="tab active"><a href="#r3-1">問題</a></li><li class="tab"><a href="#r3-2">回答</a></li></ul><div class="tab-content"><div class="tab-pane active" id="r3-1"><p><strong>This is Tab 1.</strong></p></div><div class="tab-pane" id="r3-2"><p><strong>This is Tab 2.</strong></p></div></div></div>
